@@ -22,10 +22,11 @@ t_feb = (1:length(v_feb))./24;
 t_Jul_Aug = (1:length(v_Jul_Aug))./24;
 t_all = (1:length(v))./24;
 
-figure; plot(t_feb, v_feb); xlabel('Days from 1 Feb 2018 00:00'); ylabel('meridional component of wind, units unknown')
-figure; plot(t_Jul_Aug,v_Jul_Aug); xlabel('Days from 1 Jul 2018 00:00'); ylabel('meridional component of wind, units unknown')
+figure; plot(t_feb, v_feb); xlabel('Days from 1 Feb 2018 00:00'); ylabel('meridional component of wind, units unknown'); title('Feb meridional wind, Kap Morris')
+figure; plot(t_Jul_Aug,v_Jul_Aug); xlabel('Days from 1 Jul 2018 00:00'); ylabel('meridional component of wind, units unknown'); title('Jul-Aug meridional wind, Kap Morris'
 
 figure; plot(t_all,v); xlabel('Days from 1 Jan 2018'); ylabel('meridional component of wind, units unkn.')
 hold on
 plot(x_feb,y_feb,'LineWidth',3); plot(x_Jul,y_Jul,'LineWidth',3);
 legend('meridional wind at Kap Morris','start of Feb','start of Jul');
+title('Meridional wind at Kap Morris');
