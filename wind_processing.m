@@ -27,4 +27,6 @@ figure; plot(t_Jul_Aug,v_Jul_Aug); xlabel('Days from 1 Jul 2018 00:00'); ylabel(
 
 figure; plot(t_all,v); xlabel('Days from 1 Jan 2018'); ylabel('meridional component of wind, units unkn.')
 hold on
-plot(x_feb,y_feb); plot(x_Jul,y_Jul);
+plot(x_feb,y_feb,'LineWidth',3); plot(x_Jul,y_Jul,'LineWidth',3);
+legend('meridional wind at Kap Morris','start of Feb','start of Jul');
+title('Meridional wind at Kap Morris');
